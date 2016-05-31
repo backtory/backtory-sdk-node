@@ -1,0 +1,11 @@
+node_modules/
+
+*.log
+*.iml
+.idea/
+.gitignore~
+
+.DS_Store
+
+test
+node_modules

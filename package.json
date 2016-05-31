@@ -1,0 +1,42 @@
+{
+  "name": "backtory-sdk",
+  "version": "0.0.1",
+  "description": "Backtory SDK for NodeJs",
+  "main": "index.js",
+  "devDependencies": {
+    "chai": "^1.8.1",
+    "mocha": "^1.16.2"
+  },
+  "dependencies": {
+    "unirest": "*",
+    "async": "*",
+    "backbone": "1.3.3"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "backtory",
+    "sdk",
+    "nodejs",
+    "pegah"
+  ],
+  "author": {
+    "name": "Pegah Co.",
+    "email": "",
+    "url": "http://pegahtech.ir/"
+  },
+  "contributors": [
+    "Majid Mobini <mobini.majid@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/backtory/backtory-sdk-node"
+  },
+  "bugs": {
+    "url": "https://github.com/backtory/backtory-sdk-node/issues",
+    "mail": ""
+  },
+  "homepage": "https://github.com/backtory/backtory-sdk-node",
+  "license": "Apache-2.0"
+}
