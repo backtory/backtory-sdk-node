@@ -6,6 +6,6 @@ Backtory sdk for NodeJs.
 ## Installation
 
 ```shell
-  npm install backtory-sdk-js --save
+  npm install backtory-sdk --save
 ```
 
