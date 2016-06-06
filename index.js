@@ -1,4 +1,5 @@
 var objectStorage = require("./lib/storage/objectStorage");
+var game = require("./lib/game/game");
 var common = require("./lib/common");
 var error = require("./lib/errors");
 
@@ -8,12 +9,15 @@ var Backtory = module.exports = {
     Relation: objectStorage.Relation,
     Query: objectStorage.Query,
     Error: error,
+    LeaderBoard: game.LeaderBoard,
+    Event: game.Event,
 
     setConfigFileLocation: function(path) {
         if (!path || (typeof path != "string"))
-            throw new Error("Config file location must be a string.");
+            throw new Error("Config file location must be a valid string.");
         common.setConfigFileLocation(path);
     }
 };
 
 objectStorage.init(Backtory.common);
+game.init(Backtory.common);
