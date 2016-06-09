@@ -3,6 +3,7 @@ var game = require("./lib/game/game");
 var connectivity = require("./lib/connectivity/connectivity");
 var common = require("./lib/common");
 var auth = require("./lib/auth/auth");
+var cloudCode = require("./lib/cloudCode/cloudCode");
 var error = require("./lib/errors");
 
 var Backtory = module.exports = {
@@ -16,6 +17,7 @@ var Backtory = module.exports = {
     Messages: connectivity.Messages,
     DirectMessages: connectivity.DirectMessages,
     User: auth.User,
+    Function: cloudCode.Function,
 
     setConfigFileLocation: function(path) {
         if (!path || (typeof path != "string"))
@@ -24,7 +26,8 @@ var Backtory = module.exports = {
     }
 };
 
+auth.init(Backtory.common);
 objectStorage.init(Backtory.common);
 game.init(Backtory.common);
 connectivity.init(Backtory.common);
-auth.init(Backtory.common);
+cloudCode.init(Backtory.common);
