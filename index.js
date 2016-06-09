@@ -1,7 +1,8 @@
 var objectStorage = require("./lib/storage/objectStorage");
 var game = require("./lib/game/game");
-var connectivity = require("./lib/game/connectivity");
+var connectivity = require("./lib/connectivity/connectivity");
 var common = require("./lib/common");
+var auth = require("./lib/auth/auth");
 var error = require("./lib/errors");
 
 var Backtory = module.exports = {
@@ -14,6 +15,7 @@ var Backtory = module.exports = {
     Event: game.Event,
     Messages: connectivity.Messages,
     DirectMessages: connectivity.DirectMessages,
+    User: auth.User,
 
     setConfigFileLocation: function(path) {
         if (!path || (typeof path != "string"))
@@ -25,3 +27,4 @@ var Backtory = module.exports = {
 objectStorage.init(Backtory.common);
 game.init(Backtory.common);
 connectivity.init(Backtory.common);
+auth.init(Backtory.common);
