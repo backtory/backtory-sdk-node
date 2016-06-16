@@ -16,7 +16,7 @@ var Backtory = module.exports = {
     Event: game.Event,
     Messages: connectivity.Messages,
     DirectMessages: connectivity.DirectMessages,
-    User: auth.User,
+    Users: auth.Users,
     Function: cloudCode.Function,
 
     setConfigFileLocation: function(path) {
