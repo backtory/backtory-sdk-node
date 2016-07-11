@@ -1,4 +1,4 @@
-# Backtory-SDK-Node
+# Backtory Cloud Code Service SDK for NodeJs
 
 [![NPM](https://nodei.co/npm/backtory-sdk.png)](https://nodei.co/npm/backtory-sdk/)
 
