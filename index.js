@@ -5,6 +5,7 @@ var common = require("./lib/common");
 var auth = require("./lib/auth/auth");
 var cloudCode = require("./lib/cloudCode/cloudCode");
 var error = require("./lib/errors");
+var config = require("./lib/config");
 
 var Backtory = module.exports = {
     common: common,
@@ -23,6 +24,10 @@ var Backtory = module.exports = {
         if (!path || (typeof path != "string"))
             throw new Error("Config file location must be a valid string.");
         common.setConfigFileLocation(path);
+    },
+
+    getBaseUrl: function() {
+        return config.backtory.baseUrl;
     }
 };
 
