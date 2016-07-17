@@ -15,6 +15,7 @@ var Backtory = module.exports = {
     Error: error,
     LeaderBoard: game.LeaderBoard,
     Event: game.Event,
+    Game: game.Game,
     Messages: connectivity.Messages,
     DirectMessages: connectivity.DirectMessages,
     Users: auth.Users,
