@@ -1,0 +1,9 @@
+{
+    "integratedInstances":[
+            {"id":"secret","type":"auth"},
+            {"id":"secret","type":"database"},
+            {"id":"secret","type":"cloud-code"},
+            {"id":"secret","type":"game"}
+    ],
+    "integratedMasterKey": "secret"
+}
