@@ -9,7 +9,7 @@ var Object = Backtory.Object;
 var Relation = Backtory.Relation;
 var castAfterFetch = require("./../lib/storage/utils/cast").castAfterFetchObject;
 
-Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.json");
+//Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.json");
 
 describe('cast after fetch', function() {
 

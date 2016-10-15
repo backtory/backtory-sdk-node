@@ -1,7 +1,7 @@
 var chai = require('chai');
 var should = require('chai').should();
 var Backtory = require("./../index.js");
-Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.json");
+//Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.json");
 
 
 describe('test save', function() {

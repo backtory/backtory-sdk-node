@@ -5,7 +5,7 @@
 var chai = require('chai');
 var should = require('chai').should();
 var Backtory = require("./../index.js");
-Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.json");
+//Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.json");
 
 describe('event and leaderboard', function() {
     this.timeout(20000);

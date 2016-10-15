@@ -5,7 +5,7 @@
 var chai = require('chai');
 var should = require('chai').should();
 var Backtory = require("./../index.js");
-Backtory.setConfigFileLocation("/home/majeed/Workspace/IdeaProjects/javascript/test/integrationInfo3.json");
+//Backtory.setConfigFileLocation("/home/majeed/Workspace/IdeaProjects/javascript/test/integrationInfo3.json");
 
 
 describe('query', function() {
