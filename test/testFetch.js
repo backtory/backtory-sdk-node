@@ -16,10 +16,14 @@ describe('fetch model', function() {
         test.set("_id", "57404d1aadbe1d000146dafd");
         test.fetch({
             success: function (fetched) {
-                console.log(fetched)
+                console.log(fetched);
                 fetched.should.be.instanceof(Backtory.Object);
                 fetched.should.be.instanceof(Test);
                 done();
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         });
     });
@@ -66,6 +70,10 @@ describe('fetch model', function() {
                         done();
                     }
                 });
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         });
     });
@@ -91,6 +99,10 @@ describe('fetch model', function() {
                        done();
                    }
                 });
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         });
     });

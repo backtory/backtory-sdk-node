@@ -20,6 +20,10 @@ describe('query', function() {
                 list[0].should.be.instanceof(Test);
                 list.length.should.equal(13);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -37,6 +41,10 @@ describe('query', function() {
                 list[0].should.be.instanceof(Comment);
                 list[0].get("post").should.be.instanceof(Post);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -57,6 +65,10 @@ describe('query', function() {
                 list[0].get("post").should.be.instanceof(Post);
                 (list[0].get("post").has("createdAt")).should.equal(true);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -69,6 +81,10 @@ describe('query', function() {
             success: function (list) {
                 list.length.should.equal(2);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -81,6 +97,10 @@ describe('query', function() {
             success: function (list) {
                 list.length.should.equal(2);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -93,6 +113,10 @@ describe('query', function() {
             success: function (list) {
                 list.length.should.equal(4);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -105,6 +129,10 @@ describe('query', function() {
             success: function (list) {
                 list.length.should.equal(1);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -117,6 +145,10 @@ describe('query', function() {
             success: function (list) {
                 list[0].get("num").should.equal(1);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -129,6 +161,10 @@ describe('query', function() {
             success: function (list) {
                 list.length.should.equal(2);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -141,6 +177,10 @@ describe('query', function() {
             success: function (list) {
                 list.length.should.equal(3);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -154,6 +194,10 @@ describe('query', function() {
             success: function (list) {
                 list.length.should.equal(1);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -166,6 +210,10 @@ describe('query', function() {
             success: function (list) {
                 list[0].should.be.instanceof(Comment);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -181,6 +229,10 @@ describe('query', function() {
         query.find({
             success: function (list) {
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -197,6 +249,10 @@ describe('query', function() {
                 list.length.should.equal(2);
                 list[0].should.be.instanceof(Vote);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -211,8 +267,12 @@ describe('query', function() {
         var query = new Backtory.Query(Vote);
         query.count({
             success: function (count) {
-                console.log(count)
+                console.log(count);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -225,6 +285,10 @@ describe('query', function() {
                 console.log(object);
                 object.should.be.instanceof(Test);
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         });
     });

@@ -18,8 +18,8 @@ describe('event and leaderboard', function() {
                 done();
             },
             error: function(error) {
-                console.log(error)
-                done();
+                console.log(error);
+                "1".should.equal("2");
             }
         })
 
@@ -34,8 +34,8 @@ describe('event and leaderboard', function() {
                 done();
             },
             error: function(error) {
-                console.log(error)
-                done();
+                console.log(error);
+                "1".should.equal("2");
             }
         });
     });
@@ -49,7 +49,7 @@ describe('event and leaderboard', function() {
             },
             error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         });
     });
@@ -63,7 +63,7 @@ describe('event and leaderboard', function() {
             },
             error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         });
     });
@@ -76,7 +76,7 @@ describe('event and leaderboard', function() {
             },
             error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         });
     });
@@ -91,7 +91,7 @@ describe('event and leaderboard', function() {
             },
             error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         });
     });
@@ -105,7 +105,7 @@ describe('event and leaderboard', function() {
             },
             error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         });
     });
@@ -124,14 +124,14 @@ describe('event and leaderboard', function() {
                     },
                     error: function(error) {
                         console.log(error);
-                        done();
+                        "1".should.equal("2");
                     }
                 });
 
             },
             error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         });
     });

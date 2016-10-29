@@ -30,8 +30,8 @@ describe('test save', function() {
                         done();
                     },
                     error: function(error) {
-                        console.log (error);
-                        done();
+                        console.log(error);
+                        "1".should.equal("2");
                     }
                 });
             }

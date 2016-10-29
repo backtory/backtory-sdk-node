@@ -22,6 +22,9 @@ describe('test destroy', function() {
                                 done();
                             }
                         });
+                    }, error: function(error) {
+                        console.log(error);
+                        "1".should.be.equal("2");
                     }
                 });
             }

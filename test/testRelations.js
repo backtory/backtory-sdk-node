@@ -18,6 +18,10 @@ describe('test relations', function() {
             success: function (object) {
                 console.log(JSON.stringify(object, null, 4));
                 done()
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });

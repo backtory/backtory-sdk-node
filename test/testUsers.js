@@ -23,8 +23,8 @@ describe('auth', function() {
                 ("userId" in userInfo).should.equal(true);
                 done();
             },
-            error: function(error){
-                console.log(error);
+            error: function(error) {
+                //console.log(error);
                 done();
             }
         })
@@ -42,9 +42,9 @@ describe('auth', function() {
                 console.log(userInfo);
                 done();
             },
-            error: function(error){
+            error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         })
     });
@@ -54,6 +54,10 @@ describe('auth', function() {
             success: function(users) {
                 users.should.be.instanceof(Array);
                 done();
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -67,7 +71,7 @@ describe('auth', function() {
             },
             error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         })
     });
@@ -80,7 +84,7 @@ describe('auth', function() {
             },
             error: function(error) {
                 console.log(error);
-                done();
+                "1".should.equal("2");
             }
         })
     });
@@ -99,6 +103,10 @@ describe('auth', function() {
                 console.log(user);
                 user.email.should.equal("mobini.majid@gmail.com");
                 done();
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -109,6 +117,10 @@ describe('auth', function() {
                 (typeof count == "number").should.equal(true);
                 console.log(count);
                 done();
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         })
     });
@@ -132,13 +144,17 @@ describe('auth', function() {
                 Backtory.Users.completeGuestRegistration(userInfo, {
                    success: function(userInfo) {
                        console.log(userInfo);
-                       done();
+                       "1".should.equal("2");
                    },
                     error: function(error) {
                         console.log(error);
                         done();
                     }
                 });
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
             }
         });
     });
