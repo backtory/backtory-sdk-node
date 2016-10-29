@@ -18,16 +18,23 @@ describe('auth', function() {
             "password": "majidam",
             "username": "majida2m"
         };
-        Backtory.Users.signUp(userInfo, {
-            success: function(userInfo) {
-                ("userId" in userInfo).should.equal(true);
-                done();
-            },
-            error: function(error) {
-                //console.log(error);
-                done();
-            }
-        })
+        //Backtory.Users.signUp(userInfo, {
+        //    success: function(userInfo) {
+        //        ("userId" in userInfo).should.equal(true);
+        //        done();
+        //    },
+        //    error: function(error) {
+        //        //console.log(error);
+        //        done();
+        //    }
+        //})
+        Backtory.Users.signUpAsync(userInfo).then(function() {
+            ("userId" in userInfo).should.equal(true);
+            done();
+        }).catch(function(e) {
+            console.log("error="+ JSON.stringify(e));
+            done();
+        });
     });
 
     it('test update', function (done) {
