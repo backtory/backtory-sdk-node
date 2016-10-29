@@ -16,10 +16,12 @@ var Backtory = module.exports = {
     LeaderBoard: game.LeaderBoard,
     Event: game.Event,
     Game: game.Game,
-    Messages: connectivity.Messages,
-    DirectMessages: connectivity.DirectMessages,
     Users: auth.Users,
     Function: cloudCode.Function,
+    ChatGroup: connectivity.ChatGroup,
+    ChatMessage: connectivity.ChatMessage,
+    Messages: connectivity.Messages,
+    DirectMessages: connectivity.DirectMessages,
 
     setConfigFileLocation: function(path) {
         if (!path || (typeof path != "string"))
