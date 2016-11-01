@@ -4,7 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/backtory-sdk.svg)](https://badge.fury.io/js/backtory-sdk) [![Build Status](https://travis-ci.org/backtory/backtory-sdk-node.svg?branch=master)](https://travis-ci.org/backtory/backtory-sdk-node)
 
-Backtory sdk for NodeJs.
+Backtory SDK for Cloud Code Service (NodeJs)
 
 
 ## Installation
