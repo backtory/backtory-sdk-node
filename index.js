@@ -4,6 +4,7 @@ var connectivity = require("./lib/connectivity/connectivity");
 var common = require("./lib/common");
 var auth = require("./lib/auth/auth");
 var cloudCode = require("./lib/cloudCode/cloudCode");
+var sentry = require("./lib/sentry/client");
 var error = require("./lib/errors");
 var config = require("./lib/config");
 
@@ -39,3 +40,4 @@ objectStorage.init(Backtory.common);
 game.init(Backtory.common);
 connectivity.init(Backtory.common);
 cloudCode.init(Backtory.common);
+sentry.init(Backtory.common);
