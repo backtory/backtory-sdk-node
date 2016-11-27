@@ -32,6 +32,10 @@ var Backtory = module.exports = {
 
     getBaseUrl: function() {
         return config.backtory.baseUrl;
+    },
+
+    getVersion: function() {
+        return config.sdk.version;
     }
 };
 
