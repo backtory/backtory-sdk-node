@@ -23,7 +23,8 @@ var Backtory = module.exports = {
     ChatMessage: connectivity.ChatMessage,
     Messages: connectivity.Messages,
     DirectMessages: connectivity.DirectMessages,
-
+    OnlineUsers: connectivity.OnlineUsers,
+    
     setConfigFileLocation: function(path) {
         if (!path || (typeof path != "string"))
             throw new Error("Config file location must be a valid string.");
