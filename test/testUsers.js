@@ -5,7 +5,7 @@
 var chai = require('chai');
 var should = require('chai').should();
 var Backtory = require("./../index.js");
-//Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.json");
+// Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.sample.json");
 
 describe('auth', function() {
     this.timeout(20000);
@@ -151,11 +151,11 @@ describe('auth', function() {
                 Backtory.Users.completeGuestRegistration(userInfo, {
                    success: function(userInfo) {
                        console.log(userInfo);
-                       done();
+                       "1".should.equal("2");
                    },
                     error: function(error) {
                         console.log(error);
-                        "1".should.equal("2");
+                        done();
                     }
                 });
             },
