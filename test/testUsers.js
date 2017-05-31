@@ -47,11 +47,11 @@ describe('auth', function() {
             success: function(userInfo) {
                 ("userId" in userInfo).should.equal(true);
                 console.log(userInfo);
-                done();
+                "1".should.equal("2");
             },
             error: function(error) {
                 console.log(error);
-                "1".should.equal("2");
+                done();
             }
         })
     });
@@ -74,11 +74,11 @@ describe('auth', function() {
             success: function(user) {
                 console.log(user);
                 user.email.should.equal("mobini.majid@gmail.com");
-                done();
+                "1".should.equal("2");
             },
             error: function(error) {
                 console.log(error);
-                "1".should.equal("2");
+                done();
             }
         })
     });
