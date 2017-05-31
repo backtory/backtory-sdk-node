@@ -151,11 +151,11 @@ describe('auth', function() {
                 Backtory.Users.completeGuestRegistration(userInfo, {
                    success: function(userInfo) {
                        console.log(userInfo);
-                       "1".should.equal("2");
+                       done();
                    },
                     error: function(error) {
                         console.log(error);
-                        done();
+                        "1".should.equal("2");
                     }
                 });
             },
