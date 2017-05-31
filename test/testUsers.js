@@ -104,20 +104,6 @@ describe('auth', function() {
         })
     });
 
-    it('test search by username', function (done) {
-        Backtory.Users.getByUserName("majid1", {
-            success: function(user) {
-                console.log(user);
-                user.email.should.equal("mobini.majid@gmail.com");
-                done();
-            },
-            error: function(error) {
-                console.log(error);
-                "1".should.equal("2");
-            }
-        })
-    });
-
     it('test count', function (done) {
         Backtory.Users.count({
             success: function(count) {
