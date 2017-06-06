@@ -5,7 +5,7 @@
 var chai = require('chai');
 var should = require('chai').should();
 var Backtory = require("./../index.js");
-//Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.json");
+// Backtory.setConfigFileLocation(__dirname + "/integrationInfoTest.sample.json");
 
 describe('event and leaderboard', function() {
     this.timeout(20000);
@@ -14,6 +14,22 @@ describe('event and leaderboard', function() {
         var event = new Backtory.Event("event1");
         event.add("field1", 25);
         event.sendFromUser("57591f91e4b05a176d5bb52a", {
+            success: function() {
+                done();
+            },
+            error: function(error) {
+                console.log(error);
+                "1".should.equal("2");
+            }
+        })
+    });
+
+    it('test send event bulk', function (done) {
+        var event = new Backtory.Event("event1");
+        event.add("field1", 25);
+        var eventBulk = new Backtory.EventBulk();
+        eventBulk.add(event, '57591f91e4b05a176d5bb52a');
+        eventBulk.send({
             success: function() {
                 done();
             },
