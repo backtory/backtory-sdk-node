@@ -25,6 +25,7 @@ var Backtory = module.exports = {
     Messages: connectivity.Messages,
     DirectMessages: connectivity.DirectMessages,
     OnlineUsers: connectivity.OnlineUsers,
+    MatchProperties: connectivity.MatchProperties,
     
     setConfigFileLocation: function(path) {
         if (!path || (typeof path != "string"))
