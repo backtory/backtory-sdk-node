@@ -27,7 +27,11 @@ var Backtory = module.exports = {
     OnlineUsers: connectivity.OnlineUsers,
     MatchProperties: connectivity.MatchProperties,
     MatchResult: connectivity.MatchResult,
+
     RealtimeGame: connectivity.RealtimeGame,
+    OnlineUserNew: connectivity.OnlineUserNew,
+    DirectChat: connectivity.DirectChat,
+    GroupChat: connectivity.GroupChat,
     
     setConfigFileLocation: function(path) {
         if (!path || (typeof path != "string"))
