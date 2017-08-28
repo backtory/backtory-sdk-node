@@ -29,7 +29,7 @@ var Backtory = module.exports = {
     MatchResult: connectivity.MatchResult,
 
     RealtimeGame: connectivity.RealtimeGame,
-    OnlineUserNew: connectivity.OnlineUserNew,
+    OnlineUser: connectivity.OnlineUser,
     DirectChat: connectivity.DirectChat,
     GroupChat: connectivity.GroupChat,
     
