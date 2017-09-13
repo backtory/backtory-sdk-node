@@ -1,6 +1,6 @@
 {
   "name": "backtory-sdk",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Backtory SDK for NodeJs",
   "main": "index.js",
   "devDependencies": {
